@@ -1,3 +1,351 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+#body-wrap {
+	width: 800px;
+	margin: 0 auto; 
+	
+}
+
+/* Navigation styling */
+.top-bar {
+	width: 100%;
+	margin: 0 auto; 
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+
+}
+
+.logo {
+	position: relative;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.top-bar a {
+	margin: 0 auto; 
+	/* padding-right: 35px; */
+	text-decoration: none;
+    color: lightgrey;
+}
+
+.header-picture {
+	position: relative;
+	
+}
+
+.header-box {
+	padding-bottom: 40px;
+}
+
+
+header {
+	display: inline-block;
+	margin: 40px; 
+}
+
+nav {
+display: inline-block;
+/* padding: 20px; */
+/* margin: 10px; */
+}
+
+
+/*Header-box styling */ 
+
+section div {
+	display: inline-block;
+	width: 49%;
+}
+	h1{
+		text-align:center;
+		font-size: 70px;
+	}
+/* features section styling */
+	.features {
+		display: inline-block;
+		width: 99%;
+		padding-top: 25px;
+		
+}
+
+.features p{
+	padding-right: 10px;
+	
+}
+
+
+hr {
+	border: .5px solid black;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+	 .services div {
+		display: inline-block;
+		width: 33%;
+		
+		
+}
+
+.contact {
+	
+	display: block;
+	margin-top: 10px;
+
+
+}
+
+.contact p {
+	padding-bottom: 20px;
+}
+
+.middle-img {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+}
+
+footer{
+	text-align: center;
+}
+
+.button {
+	text-decoration: none;
+	padding-left: 40px;
+	padding-right: 40px;
+	border: 1px solid black;
+	margin-left: 30%;
+	color: black;
+	
+}
+
+/* MEDIA 800 STYLING HERE */
+
+
+
+@media (max-width: 800px){
+
+    .top-bar {
+        display: flex;
+        flex-direction: column-reverse;
+        Width:98%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+     nav, .logo {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+.logo {
+    margin-top: 45px;
+    margin-left: 32%;
+    margin-bottom:40px;
+    width:27%;
+}
+
+nav {
+    display: inline;
+    justify-content: center;
+}
+
+
+nav a {
+    padding-right: 60px;
+ 
+}
+
+    .header-picture {
+        display: none;
+    }
+    
+    .header-box {
+        justify-content: center;
+        align-items: center;
+        margin-left: 23%;
+        margin-top: 60px;
+    }
+
+.header-box h1 {
+    margin-bottom: 20px;
+}
+
+.features {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11px;
+    /* margin-right: 6px; */
+}
+
+.features div {
+    width: 45%;
+    margin-left: 2px;
+}
+
+.middle-img {
+    margin-left: 11px;
+    margin-right:6px;
+    width: 90%;
+}
+
+.services {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 11px;
+    margin-right: 6px;
+}
+
+.services div {
+    width: 30%;
+}
+
+.contact {
+    margin-left: 11px;
+}
+
+hr {
+    width:98%;
+}
+
+}
+
+
+/* Mobile 500 styling starts here */
+
+@media (max-width: 500px) {
+
+  
+
+.logo {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 34%;
+        margin-bottom:5px;
+
+}     
+
+.top-bar {
+    width: 99%;
+    margin: 0;
+   
+}
+nav a{
+    /* width:100%; */
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid grey;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+}
+  
+nav a:last-child {
+    width:100%;
+    border-bottom: 1px solid grey;
+}
+
+
+.features div {
+    width:55%;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+
+.services div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-bottom: 30px;
+}
+
+.header-box {
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 23%;
+    margin-top: 20px;
+}
+
+
+
+
+ .button {
+    margin-left: 30%;
+}
+
+}
