@@ -48,6 +48,9 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
 }
 
 html, body {
@@ -296,6 +299,7 @@ hr {
 .top-bar {
     width: 99%;
     margin: 0;
+   
 }
 nav a{
     /* width:100%; */
